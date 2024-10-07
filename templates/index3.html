@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davi Reitermajer - Psicólogo</title>
+    <meta name="description" content="Psicólogo em Salvador, especializado em Psicanálise e Terapia Centrada na Pessoa. Atendimento para mulheres com trauma, pacientes com mania e esquizofrenia, idosos e mais.">
+    <meta name="keywords" content="Psicólogo, Psicanalista, Terapia-Centrada na Pessoa, Salvador Bahia">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="76">
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#hero">
+                <img src="static/images/logo.png" alt="Logo Davi Reitermajer" class="me-2" width="40" height="40">
+                <span>Davi Reitermajer</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#depoimentos">Depoimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="hero" class="hero d-flex align-items-center">
+        <div class="container text-center text-white">
+            <img src="static/images/logo.png" alt="Logo Davi Reitermajer" class="mb-4 rounded-circle hero-logo" width="150" height="150">
+            <h1 class="display-4 fw-bold mb-3">Davi Reitermajer</h1>
+            <p class="lead mb-4">Psicólogo Especializado em Psicanálise e Terapia Centrada na Pessoa</p>
+            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                <a href="#contato" class="btn btn-primario btn-lg px-4 me-sm-3">Agende uma Consulta</a>
+                <a href="https://wa.me/5571982118855" class="btn btn-outline-light btn-lg px-4">WhatsApp</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="sobre" class="py-5 bg-light" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center mb-4">Sobre Mim</h2>
+            <div class="row align-items-center">
+                <div class="col-md-5 mb-4 mb-md-0">
+                    <img src="static/images/profile.png" alt="Foto de Davi Reitermajer" class="img-fluid rounded-circle shadow-lg mx-auto d-block" style="max-width: 300px;">
+                </div>
+                <div class="col-md-7">
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique convallis.</p>
+                    <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.</p>
+                    <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-5 bg-white" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center mb-5">Serviços</h2>
+            <div class="row g-4">
+                <div class="col-md-6" data-aos="zoom-in">
+                    <div class="card h-100 shadow-sm">
+                        <img src="static/images/psicanalise.png" class="card-img-top" alt="Psicanálise">
+                        <div class="card-body">
+                            <h5 class="card-title">Psicanálise</h5>
+                            <p class="card-text">Descrição do serviço de Psicanálise. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card h-100 shadow-sm">
+                        <img src="static/images/terapia-centrada.png" class="card-img-top" alt="Terapia Centrada na Pessoa">
+                        <div class="card-body">
+                            <h5 class="card-title">Terapia Centrada na Pessoa</h5>
+                            <p class="card-text">Descrição do serviço de Terapia Centrada na Pessoa. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="py-5 bg-light" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center mb-5">Depoimentos</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <p>"Davi foi fundamental no meu processo de autoconhecimento e superação."</p>
+                                <footer class="blockquote-footer">Maria S.</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <p>"A abordagem centrada na pessoa de Davi me proporcionou grande alívio e clareza."</p>
+                                <footer class="blockquote-footer">João P.</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <p>"Excelente profissional que realmente se importa com o bem-estar dos seus pacientes."</p>
+                                <footer class="blockquote-footer">Ana L.</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-5 bg-white" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center mb-5">Contato</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    {% with messages = get_flashed_messages(with_categories=true) %}
+                      {% if messages %}
+                        {% for category, message in messages %}
+                          <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                            {{ message }}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                          </div>
+                        {% endfor %}
+                      {% endif %}
+                    {% endwith %}
+                    <form method="POST" action="/">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nome" name="nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone" class="form-label">Telefone</label>
+                            <input type="tel" class="form-control" id="telefone" name="telefone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primario w-100">Enviar</button>
+                    </form>
+                    <div class="mt-5">
+                        <h5>Informações de Contato</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-envelope me-2"></i> <a href="mailto:email@exemplo.com">email@exemplo.com</a></li>
+                            <li><i class="fas fa-phone me-2"></i> (00) 00000-0000</li>
+                            <li><i class="fas fa-map-marker-alt me-2"></i> Rua Exemplo, 123, Salvador, Bahia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-3 bg-dark text-white">
+        <div class="container text-center">
+            <p>&copy; 2024 Davi Reitermajer. Todos os direitos reservados.</p>
+            <p>
+                <a href="#" class="text-white me-3">Política de Privacidade</a>
+                <a href="#" class="text-white">Termos de Uso</a>
+            </p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5571982118855" class="whatsapp-button" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html>
